@@ -3,6 +3,18 @@ Sublime plugin to detect invalid devanagari word constructs.
 
 It also highlights words with zero width characters.
 
+Character set :-
+
+		consonants=["ॿ","ॾ","ॼ","ॻ","क","ख","ग","घ","ङ","च","छ","ज","झ","ञ","ट","ठ","ड","ढ","ण","त","थ","द","ध","न","प","फ","ब","भ","म","य","र","ऱ","ल","ळ","व","श","ष","स","ह"]
+		vowels=["ॷ","ॶ","ॵ","ॴ","ॳ","ॲ","अ","आ","इ","ई","उ","ऊ","ऋ","ऍ","ऎ","ए","ऐ","ऑ","ऒ","ओ","औ","ॠ"]
+		matras=["ा","ि","ी","ु","ू","ृ","ॅ","ॆ","े","ै","ॉ","ॊ","ो","ौ","ऻ","ऺ","ॄ","ॆ","ॏ","ॗ","ॖ"]
+		vowelMod=["ँ","ं","ः"]
+		halant=["्"]
+		nukta=["़"]
+
+
+
+
 The rules are:-
 
 		Rules
@@ -13,6 +25,8 @@ The rules are:-
 		5 Cons-Syllable ::= [Pure-Cons] [Pure-Cons] Pure-Cons
 		6 Pure-Cons ::= Full-Cons H
 		7 Full-Cons ::= C [N]
+		
+	
 
 
 Usage:
