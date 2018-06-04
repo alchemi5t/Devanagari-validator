@@ -1,0 +1,7 @@
+[
+	{
+		"caption": "Highlight valid devanagari words",
+		"command": "detect_invalid_devangari"
+
+	},
+]
