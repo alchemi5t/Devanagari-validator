@@ -31,4 +31,4 @@ The rules are:-
 
 Usage:
 
-Highlights the incorrect words post save or on load
+Highlights the Correct words post save or on load or view.run_command("detect_invalid_devangari")
