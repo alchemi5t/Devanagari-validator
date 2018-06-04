@@ -1,4 +1,4 @@
-# devanagari_invalid_grammar_detect
+# Devanagari-validator
 Sublime plugin to detect invalid devanagari word constructs.(Highlights valid words)
 
 It also does not highlight words with zero width characters, helping in detecting zero width characters.
