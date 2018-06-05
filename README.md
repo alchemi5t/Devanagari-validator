@@ -1,5 +1,5 @@
 # Devanagari-validator
-Sublime plugin to detect invalid devanagari word constructs.(Highlights valid words)
+Sublime plugin to detect invalid devanagari word constructs.(Highlights invalid words)
 
 It also does not highlight words with zero width characters, helping in detecting zero width characters.
 
@@ -31,4 +31,4 @@ The rules are:-
 
 Usage:
 
-Highlights the Correct words post save or on load or view.run_command("detect_invalid_devangari")
+Highlights the incorrect words post save or on load(if set) or view.run_command("detect_invalid_devangari")
