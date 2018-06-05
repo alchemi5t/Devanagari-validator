@@ -52,10 +52,10 @@ class DetectInvalidDevangariListener(sublime_plugin.EventListener):
 
 class DetectInvalidDevangariCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        valid_regions = [
+        invalid_regions = [
             region
             for region in self.view.find_all(r'{Charset}+'.format(Charset=Charset))
-            if re.match(reg, self.view.substr(region))
+            if not re.match(reg, self.view.substr(region))
         ]
-        if valid_regions:
-            self.view.add_regions('valid', valid_regions, 'valid')
+        if invalid_regions:
+            self.view.add_regions('invalid', invalid_regions, 'invalid')
